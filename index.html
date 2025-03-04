@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Karaoke Pip y Pop</title>
 </head>
 <body>
     <h1>Bienvenidos al karaoke Pip & Pop</h1>
 
-    <!--Formulario para agragar canciones-->
+    <!--Formulario para agregar canciones-->
+    <form id="song_form">
+        <label for="song_name">Nombre de la canción</label>
+        <input id="song_name" type="text" required>
 
-    <form id="Song_Form">
-        <label for="Song_Form">Nombre de la canción</label>
-        <input id="Song_Form" type="text" required>
         <label for="artist_name">Nombre del artista</label>
         <input id="artist_name" type="text" required>
+
         <label for="url_song">Ingresa el enlace de la canción</label>
         <input id="url_song" type="url" required>
 
@@ -24,5 +25,7 @@
     <!--Lista de canciones-->
     <h2>Lista de reproducción</h2>
     <ul id="playlist"></ul>
+
+    <script src="main.js"></script>
 </body>
 </html>
